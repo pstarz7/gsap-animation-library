@@ -35,3 +35,17 @@ Add these scripts to your HTML file's `<head>` section:
 
 <!-- MorphSVG (optional, for SVG morphing) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MorphSVGPlugin.min.js"></script>
+
+
+### Via NPM
+npm install gsap
+
+
+
+###Usage
+
+-Include GSAP (see installation above)
+-Copy the animation functions you need into your project
+-Call them with your target elements:
+
+
