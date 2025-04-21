@@ -37,7 +37,10 @@ Add these scripts to your HTML file's `<head>` section:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MorphSVGPlugin.min.js"></script>
 
 
+
+
 ### Via NPM
+```html
 npm install gsap
 
 
@@ -48,4 +51,14 @@ npm install gsap
 -Copy the animation functions you need into your project
 -Call them with your target elements:
 
+
+// Basic usage
+```html
+
+fadeIn(".my-element");
+
+// With custom parameters
+```html
+
+slideInLeft("#header", 1.5, 0.3);
 
