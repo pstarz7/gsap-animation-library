@@ -17,10 +17,10 @@ this doucs not ready yet
 Install GSAP with CDN
 
 ```javascript
-<!-- GSAP Core -->
+//GSAP Core 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-<!-- Optional Plugins -->
+//Optional Plugins
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 ```
