@@ -6,17 +6,17 @@ this doucs not ready yet
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Installation
+- Basic Animation Properties
+- Quick Start Example
+- Animation Catalog
 
 
 ## Installation
 
 Install GSAP with CDN
 
-```bash
+```javascript
 <!-- GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -31,7 +31,129 @@ Install GSAP with npm
 
 ```bash
 npm install gsap
+
+
 ```
+
+## Basic Animation Properties
+#### Summary Cheat Sheet
+
+```http
+ https://gsap.com/
+```
+
+|
+Property | Example  | What It Does             |
+| :-------- | :------- | :------------------------- |
+| **duration** | `duration: 2` | Animation length (seconds) |
+| **delay**    | `delay: 1` | Pause before starting |
+| **ease**     | `ease: "power2.out"` | Speed curve |
+| **stagger**  | `stagger: 0.2` | Delay between elements |
+| **x, y**     | `x: 100, y: "50%"` | Movement |
+| **rotation**    | `rotation: 360` | Spin effect |
+| **scale**    | `scale: 1.5` | Resize |
+| **opacity**    | `opacity: 0` | Fade in/out |
+| **scrollTrigger**    | `scrollTrigger: { trigger: ".box" }` |Scroll-based animation  |
+| **scrub**    | `scrub: true` | Smooth scroll sync |
+| **element**    | ` #element, .element  or h1 ,p, div & all tags` |  |
+
+
+## GSAP Easing Functions Reference
+
+### Basic Power Eases
+| Type | Description |
+|------|-------------|
+| `"power0"` / `"linear"` | Constant speed (no easing) |
+| `"power1.in"` | Starts slow, ends fast |
+| `"power1.out"` | Starts fast, ends slow |
+| `"power1.inOut"` | Smooth acceleration & deceleration |
+| `"power2.in"` | Stronger slow start |
+| `"power2.out"` | Stronger fast finish |
+| `"power2.inOut"` | More pronounced smooth easing |
+| `"power3.in"` | Very slow start |
+| `"power3.out"` | Very fast end |
+| `"power3.inOut"` | Dramatic smooth easing |
+| `"power4.in"` | Extremely slow start |
+| `"power4.out"` | Extremely fast end |
+| `"power4.inOut"` | Most intense smooth easing |
+
+### Special Effect Eases
+| Type | Description |
+|------|-------------|
+| `"bounce.in"` | Bouncy start |
+| `"bounce.out"` | Bouncy ending |
+| `"bounce.inOut"` | Bounces at both start and end |
+| `"elastic.in(1, 0.5)"` | Springy start |
+| `"elastic.out(1, 0.5)"` | Elastic spring effect |
+| `"elastic.inOut(1, 0.5)"` | Springy both directions |
+| `"back.in"` | Pulls back before starting |
+| `"back.out"` | Overshoots at end |
+| `"back.inOut"` | Overshoots both directions |
+
+### Smooth Motion Eases
+| Type | Description |
+|------|-------------|
+| `"sine.in"` | Gentle slow start |
+| `"sine.out"` | Gentle slow end |
+| `"sine.inOut"` | Gentle wave-like motion |
+| `"circ.in"` | Circular slow start |
+| `"circ.out"` | Circular fast end |
+| `"circ.inOut"` | Smooth circular motion |
+| `"expo.in"` | Extremely slow start |
+| `"expo.out"` | Extremely fast end |
+| `"expo.inOut"` | Sharp acceleration/deceleration |
+
+### Customizable Parameters
+| Type | Parameters | Description |
+|------|------------|-------------|
+| `"elastic"` | `(intensity, period)` | `(1, 0.5)` = default spring effect |
+| `"back"` | `(overshoot)` | `(1.7)` = default overshoot amount |
+
+> **Note**: All eases work with `gsap.to()`, `gsap.from()`, and `gsap.fromTo()`.  
+> Try them in the [GSAP Ease Visualizer](https://greensock.com/docs/v3/Eases).
+
+```javascript
+// Bounce example
+gsap.to(".box", { 
+  x: 100, 
+  ease: "bounce.out" 
+});
+```
+
+## Quick Start Example
+
+#### Besic  gsap  syntax
+
+```javascript
+gsap.to("element", {
+  duration: 2, // Takes 2 seconds to complete
+  x: 200,
+});
+```
+
+
+#### gsap with scrollTrigger syntax
+
+```javascript
+// Fade in and slide up on scroll
+gsap.from("element", {
+  duration: 1,
+  delay: 0.2,
+  y: 50,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: "element",
+    start: "top 90%", //scrollTriggring pont. you can adjust
+    toggleActions: "play none none none",
+  },
+});
+```
+
+
+
+
     
 ## ✨ Animation Catalog
 
@@ -58,9 +180,7 @@ npm install gsap
 
 
 
-
-
-
+##  Animations For All element's
 
 ### Fade in
 ```javascript
