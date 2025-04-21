@@ -38,6 +38,13 @@ npm install gsap
 
 
  ###   Text Animations
+ ```HTML
+        <div class="text fade-up">Fade Up</div>
+        <div class="text slide-in">Slide In</div>
+        <div class="text pop-in">Pop In</div>
+        <div class="text wave-text">Wave Motion</div>
+        <div class="text stretch">Stretch Effect</div>
+```
 ```javascript
         gsap.from(".fade-up", { opacity: 0, y: 30, duration: 1, ease: "power2.out" });
         gsap.from(".slide-in", { opacity: 0, x: -50, duration: 1, ease: "power2.out" });
