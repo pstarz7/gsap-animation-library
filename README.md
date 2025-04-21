@@ -1,7 +1,7 @@
 
-# GSAP RESUBALE ANIM
+# workkkkk innnnnn progreeeeeeessssssssssssssssssssssssssssssssssssssss
 
-A brief description of what this project does and who it's for
+this doucs not ready yet
 
 
 ## Features
