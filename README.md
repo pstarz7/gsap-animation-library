@@ -2,16 +2,6 @@
 
 A ready-to-use GSAP animation library that you can simply copy and paste into your projects.
 
-## Suggested Alternative Names
-1. **Animax-GSAP**  
-2. **MotionForge**  
-3. **TweenCraft**  
-4. **GSAP-QuickAnim**  
-5. **AnimateEZ**  
-6. **MotionPulse**  
-7. **GSAP-Express**  
-8. **AnimFlow**  
-
 ## Features
 
 - Easy Installation
