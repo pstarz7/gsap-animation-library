@@ -1,4 +1,4 @@
-#SANimX - GSAP Animation Library
+# SANimX - GSAP Animation Library
 
 A ready-to-use GSAP animation library that you can simply copy and paste into your projects.
 
